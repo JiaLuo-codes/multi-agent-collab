@@ -90,9 +90,9 @@ python graph.py
 
 ## 💬 效果示例
 
-![Streamlit 交互界面](界面.png)
+![Streamlit 交互界面](screenshot_ui.png)
 
-![Agent 生成的结构化报告](输出.png)
+![Agent 生成的结构化报告](screenshot_report.png)
 
 ---
 
