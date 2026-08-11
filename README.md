@@ -130,4 +130,4 @@ multi-agent-collab/
 
 ---
 
-*Built for 智能体开发实习生 求职作品*
+*Built with LangGraph + Qwen + DuckDuckGo*
