@@ -69,7 +69,7 @@ cp .env.example .env
 
 | 提供商 | 注册链接 | 免费额度 |
 |---|---|---|
-| 通义千问 | [dashscope.console.aliyun.com](https://dashscope.console.aliyun.com/) | 新用户 100 万 Token |
+| 通义千问 | [dashscope.aliyun.com](https://dashscope.aliyun.com/) | 新用户 100 万 Token |
 | DeepSeek | [platform.deepseek.com](https://platform.deepseek.com/api_keys) | 注册赠送额度 |
 
 **默认使用通义千问**，编辑 `config.py` 可切换模型。
