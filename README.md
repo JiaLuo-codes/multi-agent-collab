@@ -101,7 +101,7 @@ python graph.py
 ```
 multi-agent-collab/
 ├── graph.py          # LangGraph StateGraph 编排（核心）
-├── tools.py          # 工具定义（联网搜索、文本摘要）
+├── tools.py          # 工具定义（联网搜索）
 ├── config.py         # LLM 配置（一行切换模型）
 ├── app.py            # Streamlit Web 界面
 ├── .env.example      # API 密钥模板

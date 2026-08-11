@@ -52,22 +52,15 @@ with col2:
     go = st.button("🚀 开始研究", use_container_width=True, type="primary")
 
 if go and query.strip():
-    with st.spinner(""):
-        # 分阶段展示进度
-        status_container = st.empty()
-        status_container.markdown("📋 **规划Agent** 正在拆解问题...")
-
+    with st.spinner("Agent 协作中，请稍候..."):
         result = run(query.strip())
 
-        # 展示完整结果
         st.session_state.results.insert(0, {
             "query": query,
-            "plan": result.get("plan", ""),
             "search_queries": result.get("search_queries", []),
             "report": result.get("final_report", ""),
             "rounds": result.get("round_count", 0),
         })
-        status_container.empty()
 
 # ── 展示结果 ──
 for i, r in enumerate(st.session_state.results):
@@ -80,9 +73,6 @@ for i, r in enumerate(st.session_state.results):
                 st.markdown("**搜索关键词:**")
                 for q in r["search_queries"]:
                     st.markdown(f"- `{q}`")
-            if r.get("plan"):
-                st.markdown("**搜索计划:**")
-                st.info(r["plan"])
 
         with col_b:
             st.markdown(r["report"])
